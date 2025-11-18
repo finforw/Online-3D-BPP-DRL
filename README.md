@@ -1,3 +1,5 @@
+# This is a fork of the original work: https://github.com/alexfrom0815/Online-3D-BPP-DRL for academic research purpose.
+
 # Online 3D Bin Packing with Constrained Deep Reinforcement Learning
 
 ![teaser](pictures/state_architecture.png)
