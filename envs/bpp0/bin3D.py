@@ -1,7 +1,7 @@
 from .space import Space
 import numpy as np
 import copy
-import gym
+import gymnasium as gym
 from .cutCreator import CuttingBoxCreator
 from .mdCreator  import MDlayerBoxCreator
 from .binCreator import RandomBoxCreator, LoadBoxCreator, BoxCreator

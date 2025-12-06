@@ -1,7 +1,7 @@
 import os
 from baselines import logger
 from baselines.common.vec_env import VecEnvWrapper
-from gym.wrappers.monitoring import video_recorder
+from gymnasium.wrappers.monitoring import video_recorder
 
 
 class VecVideoRecorder(VecEnvWrapper):

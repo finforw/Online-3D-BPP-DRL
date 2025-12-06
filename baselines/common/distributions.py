@@ -276,7 +276,7 @@ class BernoulliPd(Pd):
         return cls(flat)
 
 def make_pdtype(ac_space):
-    from gym import spaces
+    from gymnasium import spaces
     if isinstance(ac_space, spaces.Box):
         assert len(ac_space.shape) == 1
         return DiagGaussianPdType(ac_space.shape[0])

@@ -1,6 +1,6 @@
 import numpy as np
-from gym import Env
-from gym.spaces import Discrete
+from gymnasium import Env
+from gymnasium.spaces import Discrete
 
 
 class FixedSequenceEnv(Env):

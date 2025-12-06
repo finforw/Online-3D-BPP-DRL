@@ -1,5 +1,5 @@
 from .monitor import Monitor
-import gym
+import gymnasium as gym
 import json
 
 def test_monitor():

@@ -2,7 +2,7 @@
 Tests for asynchronous vectorized environments.
 """
 
-import gym
+import gymnasium as gym
 import pytest
 import os
 import glob

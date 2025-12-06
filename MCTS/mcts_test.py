@@ -1,4 +1,4 @@
-import gym
+import gymnasium as gym
 import copy
 from monteCarlo import MCTree
 import numpy as np

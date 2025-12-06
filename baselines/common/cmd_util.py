@@ -8,8 +8,8 @@ try:
 except ImportError:
     MPI = None
 
-import gym
-from gym.wrappers import FlattenObservation, FilterObservation
+import gymnasium as gym
+from gymnasium.wrappers import FlattenObservation, FilterObservation
 from baselines import logger
 from baselines.bench import Monitor
 from baselines.common import set_global_seeds

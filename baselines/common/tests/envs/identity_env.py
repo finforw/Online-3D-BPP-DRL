@@ -1,7 +1,7 @@
 import numpy as np
 from abc import abstractmethod
-from gym import Env
-from gym.spaces import MultiDiscrete, Discrete, Box
+from gymnasium import Env
+from gymnasium.spaces import MultiDiscrete, Discrete, Box
 from collections import deque
 
 class IdentityEnv(Env):

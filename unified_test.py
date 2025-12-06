@@ -1,9 +1,9 @@
-from time import clock
+from time import process_time
 from acktr.model_loader import nnModel
 from acktr.reorder import ReorderTree
-import gym
+import gymnasium as gym
 import copy
-from gym.envs.registration import register
+from gymnasium.envs.registration import register
 from acktr.arguments import get_args
 
 def run_sequence(nmodel, raw_env, preview_num, c_bound):
@@ -11,7 +11,7 @@ def run_sequence(nmodel, raw_env, preview_num, c_bound):
     obs = env.cur_observation
     default_counter = 0
     box_counter = 0
-    start = clock()
+    start = process_time()
     while True:
         box_list = env.box_creator.preview(preview_num)
         # print(box_list)
@@ -19,7 +19,7 @@ def run_sequence(nmodel, raw_env, preview_num, c_bound):
         act, val, default = tree.reorder_search()
         obs, _, done, info = env.step([act])
         if done:
-            end = clock()
+            end = process_time()
             print('Time cost:', end-start)
             print('Ratio:', info['ratio'])
             return info['ratio'], info['counter'], end-start,default_counter/box_counter

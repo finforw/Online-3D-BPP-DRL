@@ -1,5 +1,5 @@
 import pytest
-import gym
+import gymnasium as gym
 
 from baselines.run import get_learn_function
 from baselines.common.tests.util import reward_per_episode_test

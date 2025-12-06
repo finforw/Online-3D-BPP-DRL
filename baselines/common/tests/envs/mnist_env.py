@@ -1,8 +1,8 @@
 import os.path as osp
 import numpy as np
 import tempfile
-from gym import Env
-from gym.spaces import Discrete, Box
+from gymnasium import Env
+from gymnasium.spaces import Discrete, Box
 
 
 

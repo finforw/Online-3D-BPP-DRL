@@ -1,5 +1,5 @@
 import os
-import gym
+import gymnasium as gym
 import tempfile
 import pytest
 import tensorflow as tf

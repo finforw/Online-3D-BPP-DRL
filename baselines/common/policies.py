@@ -7,7 +7,7 @@ from baselines.common.tf_util import adjust_shape
 from baselines.common.mpi_running_mean_std import RunningMeanStd
 from baselines.common.models import get_network_builder
 
-import gym
+import gymnasium as gym
 
 
 class PolicyWithValue(object):

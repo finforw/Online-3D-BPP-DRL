@@ -1,11 +1,11 @@
 import sys 
 sys.path.append("..")
 import numpy as np
-import gym
+import gymnasium as gym
 from acktr.model_loader import nnModel
 from acktr.utils import check_box, get_possible_position
 from acktr.arguments import get_args
-from gym.envs.registration import register
+from gymnasium.envs.registration import register
 
 def slipingWindow(plain, new_plain_size, stride=10):
     x_np = new_plain_size[0]

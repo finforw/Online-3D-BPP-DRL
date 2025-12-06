@@ -14,7 +14,7 @@ from acktr.storage import RolloutStorage
 from evaluation import evaluate
 from tensorboardX import SummaryWriter
 from unified_test import unified_test
-from gym.envs.registration import register
+from gymnasium.envs.registration import register
 
 def main(args):
     # input arguments about environment

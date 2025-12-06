@@ -1,5 +1,5 @@
 import pytest
-import gym
+import gymnasium as gym
 import tensorflow as tf
 
 from baselines.common.vec_env.subproc_vec_env import SubprocVecEnv

@@ -1,6 +1,6 @@
 import numpy as np
 import tensorflow as tf
-from gym.spaces import Discrete, Box, MultiDiscrete
+from gymnasium.spaces import Discrete, Box, MultiDiscrete
 
 def observation_placeholder(ob_space, batch_size=None, name='Ob'):
     '''
